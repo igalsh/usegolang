@@ -21,7 +21,7 @@ func handlerFunc(w http.ResponseWriter, r *http.Request) {
 			"invalid page.</p>")
 	}
 }
-func main() {
+func main1() {
 	http.HandleFunc("/", handlerFunc)
 	http.ListenAndServe(":3000", nil)
 }
